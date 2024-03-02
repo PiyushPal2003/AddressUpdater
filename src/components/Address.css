@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: #abffffcc;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 0 1.2rem 0 1.2rem;
+}
+.main-head{
+    padding: 1.4rem 1rem 1rem 1rem;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 6rem;
+}
+.add-address{
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.add-address:hover{
+    border: 2px solid red;
+    filter: drop-shadow(0px 0px 8px rgb(0, 0, 0));
+}
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-title{
+    font-size: 1.7rem;
+    margin: 0.5rem 0 1rem 0;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-head{
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #00ffff69;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 26rem;
+    font-size: 1.2rem;
+    background-color: rgb(255 248 248);
+    padding: 0.7rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    margin: 0 0 1rem 0;
+}
+.save{
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    background: #0000001c;
+    border: 2px solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.save:hover{
+    background: #0000004a;
+}
+.address{
+    margin: 2rem 0 0 0;
+}
+.addresses{
+    border: 2px solid black;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    width: 25rem;
+}
+.detail{
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+.full-add{
+    margin: 1rem 0 0.6rem 0;
+    background-color: #808080a3;
+    border-radius: 1rem;
+    padding: 0.6rem;
+}
+.address-map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.4rem 0 0 0;
+}
+.form-btn{
+    margin: 1.2rem 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+.delete-btn{
+    cursor: pointer;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    background-color: rgb(253, 29, 29);
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 0.6rem;
+}
+.update-btn{
+    cursor: pointer;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    background-color: rgb(229 213 213 / 49%);
+    color: black;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 0.6rem;
+}
+.address-h2{
+    margin: 1.2rem 0 1rem 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media(max-width:500px) { 
+    .input{
+        width: 19.4rem;
+    }
+    .main-head{
+        text-align: center;
+        font-family: "Comfortaa";
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 4rem;
+    }
+    .main-head h2{
+        font-size: 1.3rem;
+    }
+}
