@@ -49,7 +49,7 @@ function Login() {
     const storeaddress = ()=> {
         console.log("address being sent to database....")
         
-        fetch("http://localhost:5000/saveaddress", {
+        fetch("https://address-server.vercel.app/saveaddress", {
           method: "POST",
           body: JSON.stringify(inputs),
           headers: {
@@ -114,7 +114,7 @@ function Login() {
     const updateaddress = (id)=>{
         console.log("Updated Adress being sent to database....")
         
-        fetch("http://localhost:5000/updateaddress", {
+        fetch("https://address-server.vercel.app/updateaddress", {
           method: "PATCH",
           body: JSON.stringify(inputs),
           headers: {
@@ -199,7 +199,7 @@ function Login() {
             cancelButtonText: "No, I Have Changed my Mind"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch("http://localhost:5000/deleteaddress", {
+                fetch("https://address-server.vercel.app/deleteaddress", {
                     method: "DELETE",
                     headers: {
                       'Content-Type': 'application/json',
@@ -222,7 +222,7 @@ function Login() {
 
     //get addresses from database
     const getaddress = ()=>{
-        fetch("http://localhost:5000/getalladdress")
+        fetch("https://address-server.vercel.app/getalladdress")
         .then((res)=>res.json())
         .then((dt)=>{
             console.log(dt);
